@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ReOrient</string>
+
+    <string name="start_service">Start Orientation Fix</string>
+    <string name="stop_service">Stop Orientation Fix</string>
+
+    <string name="overlay_permission_required">Overlay permission is required to force screen rotation.</string>
+    <string name="notification_permission_required">Notification permission is required to keep the service alive.</string>
+    <string name="battery_optimization_msg">Please set ReOrient to "Don\'t Optimize" to prevent the fix from stopping.</string>
+
+    <string name="notif_channel_name">Orientation Fixer Service</string>
+    <string name="notif_title">Orientation Fix Active</string>
+    <string name="notif_content">Enabled</string>
+    <string name="app_description">Corrects rotation globally by inverting hardware sensor values.</string>
+</resources>
