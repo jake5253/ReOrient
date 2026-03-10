@@ -1,4 +1,4 @@
-package com.github.jake5253.reorient;
+package com.github.jake5253.rotationrepair;
 
 import org.junit.Test;
 

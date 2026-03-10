@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ReOrient"
+rootProject.name = "Rotation Repair"
 include(":app")

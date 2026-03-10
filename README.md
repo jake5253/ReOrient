@@ -1,6 +1,6 @@
-# ReOrient
+# Rotation Repair
 
-ReOrient is a lightweight Android app that globally corrects broken orientation behavior by inverting/mapping rotation values.
+Rotation Repair is a lightweight Android app that globally corrects broken orientation behavior by inverting/mapping rotation values.
 
 I built this for my Essential PH-1 after the accelerometer went off the rails: up/down and left/right were effectively reversed, and auto-rotate became unusable.
 
@@ -20,7 +20,7 @@ This app is specifically for devices where hardware sensor output is wrong but s
 - Android 7.0+ (`minSdk 24`)
 - Overlay permission (`Display over other apps`)
 - Foreground service + persistent notification
-- Recommended: disable battery optimization for ReOrient so Android does not kill the service
+- Recommended: disable battery optimization for Rotation Repair so Android does not kill the service
 
 ## Build
 
@@ -34,10 +34,10 @@ Debug APK path:
 
 ## Usage
 
-1. Install and open ReOrient.
+1. Install and open Rotation Repair.
 2. Tap **Start Orientation Fix**.
 3. Grant overlay permission when prompted.
-4. In battery settings, set ReOrient to **Don’t optimize**.
+4. In battery settings, set Rotation Repair to **Don’t optimize**.
 5. Rotate the phone and confirm orientation behaves normally.
 
 To disable the fix, open the app and tap **Stop Orientation Fix**.
@@ -53,3 +53,9 @@ To disable the fix, open the app and tap **Stop Orientation Fix**.
 - This is a workaround, not a hardware repair.
 - Some OEM ROMs may aggressively kill background services even with optimizations disabled.
 - If overlay permission is revoked, the fix cannot be applied.
+
+## Things We Might Add Later
+
+- Better lock-mode parity with Android's own rotation lock internals (`USER_ROTATION`) on edge-case ROMs.
+- More explicit fallback handling if Auto-rotate is toggled before a valid sensor reading is available.
+- Optional diagnostics/logging toggle for troubleshooting odd OEM behavior.
